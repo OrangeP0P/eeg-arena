@@ -1,0 +1,21 @@
+"""ShallowConvNet model package."""
+import os
+import sys
+
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if _PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, _PROJECT_ROOT)
+
+from models.registry import register_model
+from .config import ShallowConvNetConfig
+from .models.finetune_model import Model as ShallowConvNetFinetune
+from data.finetune import FinetuneDataLoader
+
+register_model(
+    name="shallowconvnet",
+    model_class=ShallowConvNetFinetune,
+    config_class=ShallowConvNetConfig,
+    dataset_adapter_class=FinetuneDataLoader,
+)
+
+__all__ = ["ShallowConvNetConfig", "ShallowConvNetFinetune"]

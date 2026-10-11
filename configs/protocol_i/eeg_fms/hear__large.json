@@ -1,0 +1,147 @@
+{
+  "models": [
+    "hear"
+  ],
+  "datasets": [
+    "bcic_iv_1:motor_imagery_left_right_2class",
+    "bcic_iv_1:motor_imagery_left_foot_2class",
+    "bcic_iv_2a:motor_imagery_left_right_foot_tongue_4class",
+    "bcic_iv_2a:motor_imagery_left_right_2class",
+    "bcic_iv_2a:motor_imagery_hand_vs_feet_2class",
+    "bcic_iv_2b:motor_imagery_left_right_2class",
+    "physionet_eegmmidb:motor_imagery_left_right_both_fists_feet_4class",
+    "physionet_eegmmidb:motor_imagery_left_right_2class",
+    "physionet_eegmmidb:motor_imagery_hand_vs_feet_2class",
+    "figshare_largemi:motor_imagery_with_rest_11class",
+    "figshare_largemi:motor_imagery_left_right_2class",
+    "figshare_largemi:motor_imagery_left_right_passive_3class",
+    "figshare_largemi:motor_imagery_left_right_hand_leg_4class",
+    "figshare_largemi:motor_imagery_hand_vs_leg_2class",
+    "figshare_largemi:motor_imagery_left_right_hand_leg_tongue_5class",
+    "figshare_largemi:motor_imagery_fingers_5class",
+    "figshare_meng2019:cursor_control_minus_plus_2class",
+    "figshare_meng2019:cursor_control_minus_plus_rest_3class",
+    "figshare_meng2019:cursor_movement_detection_2class",
+    "figshare_shudb:motor_imagery_left_right_2class",
+    "figshare_stroke:motor_imagery_left_right_2class",
+    "other_highgammadataset:motor_imagery_left_right_feet_tongue_4class",
+    "other_highgammadataset:motor_imagery_left_right_2class",
+    "other_highgammadataset:motor_imagery_hand_vs_feet_2class",
+    "other_openbmi:motor_imagery_left_right_2class",
+    "other_migrainedb:ssvep_migraine_detection_2class",
+    "other_migrainedb:ssaep_migraine_detection_2class",
+    "other_migrainedb:resting_migraine_detection_2class",
+    "other_migrainedb:ssvep_frequency_2class",
+    "other_migrainedb:ssaep_frequency_2class",
+    "other_migrainedb:ssvep_4hz_migraine_detection_2class",
+    "other_migrainedb:ssvep_6hz_migraine_detection_2class",
+    "other_migrainedb:ssaep_4hz_migraine_detection_2class",
+    "other_migrainedb:ssaep_6hz_migraine_detection_2class",
+    "physionet_capslpdb:sleep_staging_30s_6class",
+    "physionet_capslpdb:sleep_wake_detection_30s_2class",
+    "physionet_capslpdb:sleep_wake_nrem_rem_30s_3class",
+    "physionet_capslpdb:cap_detection_14s_2class",
+    "physionet_hmcsleepstaging:sleep_wake_detection_30s_2class",
+    "physionet_hmcsleepstaging:sleep_wake_nrem_rem_30s_3class",
+    "tuh_eeg_slowing:background_slowing_detection_2class",
+    "tuh_eeg_slowing:background_slowing_seizure_3class",
+    "tuh_eeg_events:epileptiform_event_4class",
+    "tuh_eeg_events:epileptiform_event_detection_2class",
+    "physionet_erpbci:p300_target_detection_2class",
+    "kaggle_inria:p300_feedback_correctness_2class",
+    "physionet_eegmat:mental_arithmetic_rest_2class",
+    "physionet_ucddb:sleep_staging_30s_6class",
+    "physionet_ucddb:sleep_staging_30s_5class",
+    "physionet_ucddb:sleep_wake_detection_30s_2class",
+    "physionet_ucddb:sleep_wake_nrem_rem_30s_3class",
+    "zenodo_dtu:auditory_attention_male_female_2class",
+    "zenodo_dtu:auditory_attention_left_right_2class",
+    "zenodo_dtu:auditory_attention_male_female_left_right_4class",
+    "other_seed:emotion_recognition_3class",
+    "other_faced:emotion_recognition_9class"
+  ],
+  "common_args": {
+    "epochs": 50,
+    "batch_size": 128,
+    "num_workers": 8,
+    "channel_system": "10-5",
+    "cache_dir": "./data/cache",
+    "lr": 0.0001,
+    "weight_decay": 0.05,
+    "optimizer": "AdamW",
+    "label_smoothing": 0.1,
+    "encoder_lr_scale": 1.0,
+    "classifier_lr_scale": 1.0,
+    "early_stopping_patience": 10,
+    "save_checkpoints": false,
+    "use_pretrained_weights": "True",
+    "frozen": "False",
+    "pipeline": "datasets/pipelines/classical_pipeline_with_z_score.py",
+    "pipeline_params": {
+      "resample": 200,
+      "lower_bound": 0.1,
+      "upper_bound": 75,
+      "notch": 50
+    }
+  },
+  "sweeps": {
+    "seed": [
+      0
+    ]
+  },
+  "split_plan": {
+    "ws": {
+      "folds": [
+        4
+      ]
+    },
+    "cs": {
+      "folds": [
+        4
+      ]
+    }
+  },
+  "model_overrides": {
+    "hear": {
+      "input_format": "patched",
+      "patch_size": 200,
+      "pipeline": "datasets/pipelines/labram.py",
+      "pipeline_params": {},
+      "channel_system": "10-5",
+      "batch_size": 128,
+      "variant": "large"
+    }
+  },
+  "dataset_overrides": {
+    "physionet_capslpdb:sleep_staging_30s_6class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_capslpdb:sleep_wake_detection_30s_2class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_capslpdb:sleep_wake_nrem_rem_30s_3class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_capslpdb:cap_detection_14s_2class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_hmcsleepstaging:sleep_wake_detection_30s_2class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_hmcsleepstaging:sleep_wake_nrem_rem_30s_3class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_ucddb:sleep_staging_30s_6class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_ucddb:sleep_staging_30s_5class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_ucddb:sleep_wake_detection_30s_2class": {
+      "channel_system": "dynamic"
+    },
+    "physionet_ucddb:sleep_wake_nrem_rem_30s_3class": {
+      "channel_system": "dynamic"
+    }
+  }
+}

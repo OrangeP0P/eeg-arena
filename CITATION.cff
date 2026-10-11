@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use EEG-Arena in your research, please cite the paper below."
+type: software
+title: "EEG-Arena"
+authors:
+  - family-names: Chen
+    given-names: Zhige
+  - family-names: Peng
+    given-names: Shu
+  - family-names: Qin
+    given-names: Chengxuan
+  - family-names: Liu
+    given-names: Rui
+  - family-names: Yang
+    given-names: Rui
+  - family-names: Tan
+    given-names: Kay Chen
+  - family-names: Wu
+    given-names: Jibin
+date-released: 2026-10-10
+url: "https://eeg.fm/"
+abstract: >-
+  An open-source evaluation framework for reproducible benchmarking and
+  comparison of EEG foundation models and supervised baselines.
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Chen
+      given-names: Zhige
+    - family-names: Peng
+      given-names: Shu
+    - family-names: Qin
+      given-names: Chengxuan
+    - family-names: Liu
+      given-names: Rui
+    - family-names: Yang
+      given-names: Rui
+    - family-names: Tan
+      given-names: Kay Chen
+    - family-names: Wu
+      given-names: Jibin
+  title: "Benchmarking EEG Foundation Models at Scale: Lessons from 20,000 Evaluations"
+  journal: "arXiv"
+  year: 2026
+  doi: "10.48550/arXiv.2609.32743"
+  url: "https://arxiv.org/abs/2609.32743"

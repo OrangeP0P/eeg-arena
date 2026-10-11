@@ -1,0 +1,68 @@
+# Pretrain Weights
+models/Weights/
+
+# Model families not evaluated in arXiv:2609.32743
+models/BrainOmni/
+models/EEGDINO/
+models/FEMBA/
+models/Gram/
+models/Hypnos/
+models/LuMamba/
+models/MIRepNet/
+models/NeuroLM/
+models/OSFBase/
+models/PanLUNA/
+models/PhysioOmni/
+models/SignalJEPA/
+models/SingLEM/
+models/SleepLM/
+
+# Pretraining data pipeline
+data/pretrain/
+
+# Evaluation cache
+data/cache/
+
+# Python
+*__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Output (Json/Checkpoint)
+experiments/experiment_registry/
+experiments/output/
+output/
+experiments.csv
+cache_registry.csv
+
+# Other
+.claude/
+.conda/
+.codex/
+.vscode/
+.codex/
+.codex
+
+# configs & run.sh
+cache_registry.csv
+experiments/configs/*
+!experiments/configs/integration/
+experiments/configs/integration/*
+!experiments/configs/integration/bci_iv_2b_new_official_pretrained_models.json
+!experiments/configs/integration/bci_iv_2b_new_official_pretrained_models_full_finetune_50ep.json
+!experiments/configs/integration/BCI_IV_2B_NEW_MODELS_FULLFT50.md
+!experiments/configs/integration/run_bci_iv_2b_new_official_pretrained_models.slurm
+!experiments/configs/integration/run_bci_iv_2b_new_models_gpudebug.slurm
+!experiments/configs/integration/run_bci_iv_2b_new_models_fullft50_a800.slurm
+!experiments/configs/integration/run_bci_iv_2b_new_models_fullft50_sat3090.slurm
+run_bmi8.sh
+run_bmi9.sh
+run_bmi8_table_iv.sh
+sh/
+*.sh
+
+# Documentation
+docs/*
+!docs/model_interface.md
+.docs/

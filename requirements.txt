@@ -1,0 +1,52 @@
+# Core scientific computing
+numpy
+scipy
+pandas
+scikit-learn
+opt-einsum
+
+# Deep learning
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+timm
+transformers==4.46.3
+torchinfo
+safetensors
+
+# EEG processing
+mne
+wfdb
+
+# Tensor operations
+einops
+einx>=0.3
+vector-quantize-pytorch>=1.22
+
+# Data storage
+h5py
+cloudpickle
+
+# Visualization & document I/O
+matplotlib
+python-docx
+pdfplumber
+
+# Utilities
+tqdm
+packaging
+threadpoolctl
+linear-attention-transformer
+regex
+ftfy
+loguru
+
+# Foundation-model upstream compatibility
+pyedflib>=0.1.37
+peft==0.21.2
+
+# LLM integration
+openai
+
+# Optional acceleration; install after PyTorch when needed
+# flash-attn

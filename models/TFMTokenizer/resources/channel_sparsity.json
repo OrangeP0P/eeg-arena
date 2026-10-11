@@ -1,0 +1,1604 @@
+{
+  "schema_version": 1,
+  "name": "tfmtokenizer_table_i_max16",
+  "description": "TFM-Encoder Table-I channel subsets. Candidates reproduce each task original Table-I 10-5 or dynamic space; tasks above the official 16-channel limit use deterministic label-free farthest-point sampling on MNE standard_1005 coordinates (bipolar channels use endpoint midpoints), with final channels kept in source order.",
+  "datasets": {
+    "bcic_iv_1:motor_imagery_left_right_2class": {
+      "dataset": "bcic_iv_1",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 49,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:AF4",
+            "EEG:F3",
+            "EEG:Fz",
+            "EEG:FC2",
+            "EEG:FC6",
+            "EEG:T7",
+            "EEG:C1",
+            "EEG:T8",
+            "EEG:CCP2",
+            "EEG:CP5",
+            "EEG:CP6",
+            "EEG:P3",
+            "EEG:Pz",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:O2"
+          ]
+        }
+      }
+    },
+    "bcic_iv_1:motor_imagery_left_foot_2class": {
+      "dataset": "bcic_iv_1",
+      "task": "motor_imagery_left_foot_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 49,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:AF4",
+            "EEG:F3",
+            "EEG:Fz",
+            "EEG:FC2",
+            "EEG:FC6",
+            "EEG:T7",
+            "EEG:C1",
+            "EEG:T8",
+            "EEG:CCP2",
+            "EEG:CP5",
+            "EEG:CP6",
+            "EEG:P3",
+            "EEG:Pz",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:O2"
+          ]
+        }
+      }
+    },
+    "bcic_iv_2a:motor_imagery_left_right_foot_tongue_4class": {
+      "dataset": "bcic_iv_2a",
+      "task": "motor_imagery_left_right_foot_tongue_4class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 5,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 5,
+          "channels": [
+            "EEG:Fz",
+            "EEG:C3",
+            "EEG:Cz",
+            "EEG:C4",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "bcic_iv_2a:motor_imagery_left_right_2class": {
+      "dataset": "bcic_iv_2a",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 5,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 5,
+          "channels": [
+            "EEG:Fz",
+            "EEG:C3",
+            "EEG:Cz",
+            "EEG:C4",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "bcic_iv_2a:motor_imagery_hand_vs_feet_2class": {
+      "dataset": "bcic_iv_2a",
+      "task": "motor_imagery_hand_vs_feet_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 5,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 5,
+          "channels": [
+            "EEG:Fz",
+            "EEG:C3",
+            "EEG:Cz",
+            "EEG:C4",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "bcic_iv_2b:motor_imagery_left_right_2class": {
+      "dataset": "bcic_iv_2b",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 3,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 3,
+          "channels": [
+            "EEG:C3",
+            "EEG:Cz",
+            "EEG:C4"
+          ]
+        }
+      }
+    },
+    "physionet_eegmmidb:motor_imagery_left_right_both_fists_feet_4class": {
+      "dataset": "physionet_eegmmidb",
+      "task": "motor_imagery_left_right_both_fists_feet_4class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:FC3",
+            "EEG:FC4",
+            "EEG:C1",
+            "EEG:C2",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F7",
+            "EEG:Fz",
+            "EEG:F8",
+            "EEG:T9",
+            "EEG:T10",
+            "EEG:TP7",
+            "EEG:P5",
+            "EEG:P6",
+            "EEG:POz",
+            "EEG:Iz"
+          ]
+        }
+      }
+    },
+    "physionet_eegmmidb:motor_imagery_left_right_2class": {
+      "dataset": "physionet_eegmmidb",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:FC3",
+            "EEG:FC4",
+            "EEG:C1",
+            "EEG:C2",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F7",
+            "EEG:Fz",
+            "EEG:F8",
+            "EEG:T9",
+            "EEG:T10",
+            "EEG:TP7",
+            "EEG:P5",
+            "EEG:P6",
+            "EEG:POz",
+            "EEG:Iz"
+          ]
+        }
+      }
+    },
+    "physionet_eegmmidb:motor_imagery_hand_vs_feet_2class": {
+      "dataset": "physionet_eegmmidb",
+      "task": "motor_imagery_hand_vs_feet_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:FC3",
+            "EEG:FC4",
+            "EEG:C1",
+            "EEG:C2",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F7",
+            "EEG:Fz",
+            "EEG:F8",
+            "EEG:T9",
+            "EEG:T10",
+            "EEG:TP7",
+            "EEG:P5",
+            "EEG:P6",
+            "EEG:POz",
+            "EEG:Iz"
+          ]
+        }
+      }
+    },
+    "figshare_largemi:motor_imagery_with_rest_11class": {
+      "dataset": "figshare_largemi",
+      "task": "motor_imagery_with_rest_11class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "figshare_largemi:motor_imagery_left_right_2class": {
+      "dataset": "figshare_largemi",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "figshare_largemi:motor_imagery_left_right_passive_3class": {
+      "dataset": "figshare_largemi",
+      "task": "motor_imagery_left_right_passive_3class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "figshare_largemi:motor_imagery_left_right_hand_leg_4class": {
+      "dataset": "figshare_largemi",
+      "task": "motor_imagery_left_right_hand_leg_4class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "figshare_largemi:motor_imagery_hand_vs_leg_2class": {
+      "dataset": "figshare_largemi",
+      "task": "motor_imagery_hand_vs_leg_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "figshare_largemi:motor_imagery_left_right_hand_leg_tongue_5class": {
+      "dataset": "figshare_largemi",
+      "task": "motor_imagery_left_right_hand_leg_tongue_5class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "figshare_largemi:motor_imagery_fingers_5class": {
+      "dataset": "figshare_largemi",
+      "task": "motor_imagery_fingers_5class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "figshare_meng2019:cursor_control_minus_plus_2class": {
+      "dataset": "figshare_meng2019",
+      "task": "cursor_control_minus_plus_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 58,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:F1",
+            "EEG:FT7",
+            "EEG:FC4",
+            "EEG:FT8",
+            "EEG:Cz",
+            "EEG:C6",
+            "EEG:TP7",
+            "EEG:CP3",
+            "EEG:CP4",
+            "EEG:TP8",
+            "EEG:P1",
+            "EEG:P2",
+            "EEG:PO8",
+            "EEG:O1"
+          ]
+        }
+      }
+    },
+    "figshare_meng2019:cursor_control_minus_plus_rest_3class": {
+      "dataset": "figshare_meng2019",
+      "task": "cursor_control_minus_plus_rest_3class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 58,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:F1",
+            "EEG:FT7",
+            "EEG:FC4",
+            "EEG:FT8",
+            "EEG:Cz",
+            "EEG:C6",
+            "EEG:TP7",
+            "EEG:CP3",
+            "EEG:CP4",
+            "EEG:TP8",
+            "EEG:P1",
+            "EEG:P2",
+            "EEG:PO8",
+            "EEG:O1"
+          ]
+        }
+      }
+    },
+    "figshare_meng2019:cursor_movement_detection_2class": {
+      "dataset": "figshare_meng2019",
+      "task": "cursor_movement_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 58,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:F1",
+            "EEG:FT7",
+            "EEG:FC4",
+            "EEG:FT8",
+            "EEG:Cz",
+            "EEG:C6",
+            "EEG:TP7",
+            "EEG:CP3",
+            "EEG:CP4",
+            "EEG:TP8",
+            "EEG:P1",
+            "EEG:P2",
+            "EEG:PO8",
+            "EEG:O1"
+          ]
+        }
+      }
+    },
+    "figshare_shudb:motor_imagery_left_right_2class": {
+      "dataset": "figshare_shudb",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 32,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:Fz",
+            "EEG:FC5",
+            "EEG:FC6",
+            "EEG:Cz",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:CP2",
+            "EEG:CP5",
+            "EEG:CP6",
+            "EEG:Pz",
+            "EEG:PO4",
+            "EEG:O1"
+          ]
+        }
+      }
+    },
+    "figshare_stroke:motor_imagery_left_right_2class": {
+      "dataset": "figshare_stroke",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 30,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:Fz",
+            "EEG:F3",
+            "EEG:FCz",
+            "EEG:FC4",
+            "EEG:FT7",
+            "EEG:FT8",
+            "EEG:Cz",
+            "EEG:CP3",
+            "EEG:TP7",
+            "EEG:TP8",
+            "EEG:Pz",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:O2"
+          ]
+        }
+      }
+    },
+    "other_highgammadataset:motor_imagery_left_right_feet_tongue_4class": {
+      "dataset": "other_highgammadataset",
+      "task": "motor_imagery_left_right_feet_tongue_4class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 80,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:FC2",
+            "EEG:M1",
+            "EEG:M2",
+            "EEG:POz",
+            "EEG:AF7",
+            "EEG:AF4",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:C6",
+            "EEG:CPz",
+            "EEG:P5",
+            "EEG:PO6",
+            "EEG:FT9",
+            "EEG:FT10",
+            "EEG:PO10",
+            "EEG:I1"
+          ]
+        }
+      }
+    },
+    "other_highgammadataset:motor_imagery_left_right_2class": {
+      "dataset": "other_highgammadataset",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 80,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:FC2",
+            "EEG:M1",
+            "EEG:M2",
+            "EEG:POz",
+            "EEG:AF7",
+            "EEG:AF4",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:C6",
+            "EEG:CPz",
+            "EEG:P5",
+            "EEG:PO6",
+            "EEG:FT9",
+            "EEG:FT10",
+            "EEG:PO10",
+            "EEG:I1"
+          ]
+        }
+      }
+    },
+    "other_highgammadataset:motor_imagery_hand_vs_feet_2class": {
+      "dataset": "other_highgammadataset",
+      "task": "motor_imagery_hand_vs_feet_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 80,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:FC2",
+            "EEG:M1",
+            "EEG:M2",
+            "EEG:POz",
+            "EEG:AF7",
+            "EEG:AF4",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:C6",
+            "EEG:CPz",
+            "EEG:P5",
+            "EEG:PO6",
+            "EEG:FT9",
+            "EEG:FT10",
+            "EEG:PO10",
+            "EEG:I1"
+          ]
+        }
+      }
+    },
+    "other_openbmi:motor_imagery_left_right_2class": {
+      "dataset": "other_openbmi",
+      "task": "motor_imagery_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 62,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:F3",
+            "EEG:Fz",
+            "EEG:FC6",
+            "EEG:Cz",
+            "EEG:TP9",
+            "EEG:CP5",
+            "EEG:TP10",
+            "EEG:P4",
+            "EEG:PO9",
+            "EEG:O1",
+            "EEG:PO10",
+            "EEG:P1",
+            "EEG:FT9",
+            "EEG:F10"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssvep_migraine_detection_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssvep_migraine_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssaep_migraine_detection_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssaep_migraine_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:resting_migraine_detection_2class": {
+      "dataset": "other_migrainedb",
+      "task": "resting_migraine_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssvep_frequency_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssvep_frequency_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssaep_frequency_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssaep_frequency_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssvep_4hz_migraine_detection_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssvep_4hz_migraine_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssvep_6hz_migraine_detection_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssvep_6hz_migraine_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssaep_4hz_migraine_detection_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssaep_4hz_migraine_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "other_migrainedb:ssaep_6hz_migraine_detection_2class": {
+      "dataset": "other_migrainedb",
+      "task": "ssaep_6hz_migraine_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 84,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F5",
+            "EEG:FT9",
+            "EEG:C3",
+            "EEG:TP7",
+            "EEG:P1",
+            "EEG:POO1",
+            "EEG:I1",
+            "EEG:AFp2",
+            "EEG:F10",
+            "EEG:FCz",
+            "EEG:FC6",
+            "EEG:CP2",
+            "EEG:CP6",
+            "EEG:PO8",
+            "EEG:M1",
+            "EEG:M2"
+          ]
+        }
+      }
+    },
+    "physionet_capslpdb:sleep_staging_30s_6class": {
+      "dataset": "physionet_capslpdb",
+      "task": "sleep_staging_30s_6class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 5,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 5,
+          "channels": [
+            "EEG:Fp2-F4",
+            "EEG:F4-C4",
+            "EEG:C4-P4",
+            "EEG:P4-O2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "physionet_capslpdb:sleep_wake_detection_30s_2class": {
+      "dataset": "physionet_capslpdb",
+      "task": "sleep_wake_detection_30s_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 5,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 5,
+          "channels": [
+            "EEG:Fp2-F4",
+            "EEG:F4-C4",
+            "EEG:C4-P4",
+            "EEG:P4-O2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "physionet_capslpdb:sleep_wake_nrem_rem_30s_3class": {
+      "dataset": "physionet_capslpdb",
+      "task": "sleep_wake_nrem_rem_30s_3class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 5,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 5,
+          "channels": [
+            "EEG:Fp2-F4",
+            "EEG:F4-C4",
+            "EEG:C4-P4",
+            "EEG:P4-O2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "physionet_capslpdb:cap_detection_14s_2class": {
+      "dataset": "physionet_capslpdb",
+      "task": "cap_detection_14s_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 5,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 5,
+          "channels": [
+            "EEG:Fp2-F4",
+            "EEG:F4-C4",
+            "EEG:C4-P4",
+            "EEG:P4-O2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "physionet_hmcsleepstaging:sleep_wake_detection_30s_2class": {
+      "dataset": "physionet_hmcsleepstaging",
+      "task": "sleep_wake_detection_30s_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 4,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 4,
+          "channels": [
+            "EEG:F4-M1",
+            "EEG:C4-M1",
+            "EEG:O2-M1",
+            "EEG:C3-M2"
+          ]
+        }
+      }
+    },
+    "physionet_hmcsleepstaging:sleep_wake_nrem_rem_30s_3class": {
+      "dataset": "physionet_hmcsleepstaging",
+      "task": "sleep_wake_nrem_rem_30s_3class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 4,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 4,
+          "channels": [
+            "EEG:F4-M1",
+            "EEG:C4-M1",
+            "EEG:O2-M1",
+            "EEG:C3-M2"
+          ]
+        }
+      }
+    },
+    "tuh_eeg_slowing:background_slowing_detection_2class": {
+      "dataset": "tuh_eeg_slowing",
+      "task": "background_slowing_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "tuh_eeg_slowing:background_slowing_seizure_3class": {
+      "dataset": "tuh_eeg_slowing",
+      "task": "background_slowing_seizure_3class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "tuh_eeg_events:epileptiform_event_4class": {
+      "dataset": "tuh_eeg_events",
+      "task": "epileptiform_event_4class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "tuh_eeg_events:epileptiform_event_detection_2class": {
+      "dataset": "tuh_eeg_events",
+      "task": "epileptiform_event_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 21,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:F7",
+            "EEG:F8",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:T6",
+            "EEG:A1",
+            "EEG:A2",
+            "EEG:Fz",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "physionet_erpbci:p300_target_detection_2class": {
+      "dataset": "physionet_erpbci",
+      "task": "p300_target_detection_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F7",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:T7",
+            "EEG:P3",
+            "EEG:P9",
+            "EEG:PO7",
+            "EEG:Iz",
+            "EEG:POz",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F6",
+            "EEG:FC2",
+            "EEG:T8",
+            "EEG:P4",
+            "EEG:P10"
+          ]
+        }
+      }
+    },
+    "kaggle_inria:p300_feedback_correctness_2class": {
+      "dataset": "kaggle_inria",
+      "task": "p300_feedback_correctness_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 56,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp2",
+            "EEG:AF7",
+            "EEG:F1",
+            "EEG:FT7",
+            "EEG:FC4",
+            "EEG:FT8",
+            "EEG:Cz",
+            "EEG:C6",
+            "EEG:TP7",
+            "EEG:CP3",
+            "EEG:CP4",
+            "EEG:TP8",
+            "EEG:P1",
+            "EEG:P2",
+            "EEG:PO8",
+            "EEG:O1"
+          ]
+        }
+      }
+    },
+    "physionet_eegmat:mental_arithmetic_rest_2class": {
+      "dataset": "physionet_eegmat",
+      "task": "mental_arithmetic_rest_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 19,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:F3",
+            "EEG:F4",
+            "EEG:T3",
+            "EEG:T4",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:T5",
+            "EEG:T6",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:O1",
+            "EEG:O2",
+            "EEG:Cz",
+            "EEG:Pz"
+          ]
+        }
+      }
+    },
+    "physionet_ucddb:sleep_staging_30s_6class": {
+      "dataset": "physionet_ucddb",
+      "task": "sleep_staging_30s_6class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 2,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 2,
+          "channels": [
+            "EEG:C3-A2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "physionet_ucddb:sleep_staging_30s_5class": {
+      "dataset": "physionet_ucddb",
+      "task": "sleep_staging_30s_5class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 2,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 2,
+          "channels": [
+            "EEG:C3-A2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "physionet_ucddb:sleep_wake_detection_30s_2class": {
+      "dataset": "physionet_ucddb",
+      "task": "sleep_wake_detection_30s_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 2,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 2,
+          "channels": [
+            "EEG:C3-A2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "physionet_ucddb:sleep_wake_nrem_rem_30s_3class": {
+      "dataset": "physionet_ucddb",
+      "task": "sleep_wake_nrem_rem_30s_3class",
+      "family": "tfm_table_i",
+      "source_channel_system": "dynamic",
+      "source_channel_count": 2,
+      "selection_method": "all",
+      "variants": {
+        "tfm16": {
+          "target_count": 2,
+          "channels": [
+            "EEG:C3-A2",
+            "EEG:C4-A1"
+          ]
+        }
+      }
+    },
+    "zenodo_kul:auditory_attention_attended_side_2class": {
+      "dataset": "zenodo_kul",
+      "task": "auditory_attention_attended_side_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F7",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:T7",
+            "EEG:P3",
+            "EEG:P9",
+            "EEG:PO7",
+            "EEG:Iz",
+            "EEG:POz",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F6",
+            "EEG:FC2",
+            "EEG:T8",
+            "EEG:P4",
+            "EEG:P10"
+          ]
+        }
+      }
+    },
+    "zenodo_dtu:auditory_attention_male_female_2class": {
+      "dataset": "zenodo_dtu",
+      "task": "auditory_attention_male_female_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F7",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:T7",
+            "EEG:P3",
+            "EEG:P9",
+            "EEG:PO7",
+            "EEG:Iz",
+            "EEG:POz",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F6",
+            "EEG:FC2",
+            "EEG:T8",
+            "EEG:P4",
+            "EEG:P10"
+          ]
+        }
+      }
+    },
+    "zenodo_dtu:auditory_attention_left_right_2class": {
+      "dataset": "zenodo_dtu",
+      "task": "auditory_attention_left_right_2class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F7",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:T7",
+            "EEG:P3",
+            "EEG:P9",
+            "EEG:PO7",
+            "EEG:Iz",
+            "EEG:POz",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F6",
+            "EEG:FC2",
+            "EEG:T8",
+            "EEG:P4",
+            "EEG:P10"
+          ]
+        }
+      }
+    },
+    "zenodo_dtu:auditory_attention_male_female_left_right_4class": {
+      "dataset": "zenodo_dtu",
+      "task": "auditory_attention_male_female_left_right_4class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 64,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:F7",
+            "EEG:FC3",
+            "EEG:C1",
+            "EEG:T7",
+            "EEG:P3",
+            "EEG:P9",
+            "EEG:PO7",
+            "EEG:Iz",
+            "EEG:POz",
+            "EEG:CPz",
+            "EEG:Fpz",
+            "EEG:F6",
+            "EEG:FC2",
+            "EEG:T8",
+            "EEG:P4",
+            "EEG:P10"
+          ]
+        }
+      }
+    },
+    "other_seed:emotion_recognition_3class": {
+      "dataset": "other_seed",
+      "task": "emotion_recognition_3class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 60,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:FP1",
+            "EEG:FP2",
+            "EEG:F1",
+            "EEG:FT7",
+            "EEG:FC4",
+            "EEG:FT8",
+            "EEG:CZ",
+            "EEG:C6",
+            "EEG:TP7",
+            "EEG:CP3",
+            "EEG:CP4",
+            "EEG:TP8",
+            "EEG:P1",
+            "EEG:P2",
+            "EEG:PO6",
+            "EEG:O1"
+          ]
+        }
+      }
+    },
+    "other_faced:emotion_recognition_9class": {
+      "dataset": "other_faced",
+      "task": "emotion_recognition_9class",
+      "family": "tfm_table_i",
+      "source_channel_system": "10-5",
+      "source_channel_count": 30,
+      "selection_method": "standard_1005_farthest_point_16",
+      "variants": {
+        "tfm16": {
+          "target_count": 16,
+          "channels": [
+            "EEG:Fp1",
+            "EEG:Fp2",
+            "EEG:F3",
+            "EEG:F4",
+            "EEG:Cz",
+            "EEG:C3",
+            "EEG:C4",
+            "EEG:T7",
+            "EEG:T8",
+            "EEG:Pz",
+            "EEG:P3",
+            "EEG:P4",
+            "EEG:P7",
+            "EEG:P8",
+            "EEG:O1",
+            "EEG:O2"
+          ]
+        }
+      }
+    }
+  }
+}
