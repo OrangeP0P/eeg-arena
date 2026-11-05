@@ -478,7 +478,7 @@ register_dataset_dynamic('other_highgammadataset', {
     'raw_path':    'other_highgammadataset/',
     'domain_tag':  'other_highgammadataset',
     'kernel_spec': os.path.join(_KERNELS_DIR, 'other_highgammadataset.py'),
-    'subject_parser': {"type": "slice", "start": 0, "end": 1},
+    'subject_parser': {"type": "slice", "start": 0, "end": None},
     'tasks': {
         'motor_imagery_left_right_feet_tongue_4class': _task(
             _EVENT_HDF5, {'tmin': -0.5, 'tmax': 4.0},
